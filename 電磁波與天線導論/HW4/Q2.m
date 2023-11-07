@@ -1,0 +1,9 @@
+mu0 = 4*pi*10^(-7);
+epsilon_0 = 1/(36*pi)*10^(-9);
+epsilon_1 = epsilon_0*4;
+d = 0;
+w = 1e10;
+beta = w*sqrt(mu0*epsilon_1);
+Gamma12 = -1/3;
+Gamma23 = 1/3;
+Gamma = (Gamma12+Gamma23*exp(-2*beta*d*1i))/(1+Gamma12*Gamma23*exp(-2*beta*d*1i))
